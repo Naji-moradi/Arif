@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Cards from "./components/Cards";
 import News from "./components/News";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Cards />
       <News />
+      <Footer />
     </>
   );
 }

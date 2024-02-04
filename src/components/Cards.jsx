@@ -5,8 +5,8 @@ import CastForEducationIcon from "@mui/icons-material/CastForEducation";
 const Cards = () => {
   return (
     <div className="container">
-      <div class="row py-5">
-        <div class="col-12 col-md-4 ">
+      <div className="row py-5">
+        <div className="col-12 col-md-4 ">
           <div
             className="box-color d-flex flex-column text-center p-5 border border-2 rounded-2 py-5 bg-light
             m-1"
