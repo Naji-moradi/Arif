@@ -6,15 +6,15 @@ import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import CloseIcon from "@mui/icons-material/Close";
 
-const Header = () => {
+const TopHeader = () => {
   const [isDivOpen, setIsDivOpen] = useState(false);
   const toggleDiv = () => {
     setIsDivOpen(!isDivOpen);
   };
   return (
     <div className="hero1 ">
-      <video autoPlay loop muted playsInline>
-        <source className="back-video" src={video} type="video/mp4" />
+      <video autoPlay loop muted playsInline className="outerVideo ">
+        <source className="back-video  " src={video} type="video/mp4" />
       </video>
 
       <nav>
@@ -25,9 +25,7 @@ const Header = () => {
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
           <ul className="nav-links">
-            <label for="close-btn" className="btn close-btn">
-              {/* <i className="fas fa-times">ffff</i> */}
-            </label>
+            <label for="close-btn" className="btn close-btn"></label>
             <li>
               <a href="#">Projects</a>
             </li>
@@ -64,79 +62,6 @@ const Header = () => {
             <li>
               <a href="#">Contact</a>
             </li>
-            {/* <li>
-            <a href="#" className="desktop-item">
-              Mega Menu
-            </a>
-            <input type="checkbox" id="showMega" />
-            <label for="showMega" className="mobile-item">
-              Mega Menu
-            </label>
-            <div className="mega-box">
-              <div className="content">
-                <div className="row">
-                  <img
-                    src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="row">
-                  <header>Design Services</header>
-                  <ul className="mega-links">
-                    <li>
-                      <a href="#">Graphics</a>
-                    </li>
-                    <li>
-                      <a href="#">Vectors</a>
-                    </li>
-                    <li>
-                      <a href="#">Business cards</a>
-                    </li>
-                    <li>
-                      <a href="#">Custom logo</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="row">
-                  <header>Email Services</header>
-                  <ul className="mega-links">
-                    <li>
-                      <a href="#">Personal Email</a>
-                    </li>
-                    <li>
-                      <a href="#">Business Email</a>
-                    </li>
-                    <li>
-                      <a href="#">Mobile Email</a>
-                    </li>
-                    <li>
-                      <a href="#">Web Marketing</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="row">
-                  <header>Security services</header>
-                  <ul className="mega-links">
-                    <li>
-                      <a href="#">Site Seal</a>
-                    </li>
-                    <li>
-                      <a href="#">VPS Hosting</a>
-                    </li>
-                    <li>
-                      <a href="#">Privacy Seal</a>
-                    </li>
-                    <li>
-                      <a href="#">Website design</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <a href="#">Feedback</a>
-          </li> */}
           </ul>
 
           <span className=" btn btn-outline-light bg-light text-dark btnStyle ">
@@ -148,9 +73,9 @@ const Header = () => {
       </nav>
 
       {isDivOpen && (
-        <div className="centered-div">
-          <h6>Menue</h6>
-          <ul>
+        <div className="centered-div py-3">
+          <h5>Menue</h5>
+          <ul className="px-3 fw-semibold ">
             <li>Home</li>
             <li>Project</li>
             <li>Services</li>
@@ -205,4 +130,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default TopHeader;
