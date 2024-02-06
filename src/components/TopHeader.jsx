@@ -27,7 +27,9 @@ const TopHeader = () => {
           <ul className="nav-links">
             <label for="close-btn" className="btn close-btn"></label>
             <li>
-              <a href="#">Projects</a>
+              <Link to="/projects">
+                <a href="#">Projects</a>
+              </Link>
             </li>
 
             <li>

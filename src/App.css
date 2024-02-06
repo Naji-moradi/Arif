@@ -1,6 +1,9 @@
 #root {
   max-width: 100%;
 }
+*:focus {
+  outline: none !important;
+}
 body {
   overflow-x: hidden;
 }
@@ -209,3 +212,38 @@ nav input {
   /* margin: 40px; */
   /* margin-top: 20px; */
 }
+
+/* project css start */
+.imageProject img {
+  max-height: 500px; /* Set the desired height */
+  width: 100%;
+}
+.slick-prev,
+.slick-next {
+  color: black;
+
+  /* Set the color to black or any color you prefer */
+}
+.slick-prev {
+  margin-left: 0px;
+}
+
+/* Optional: Style the arrow icons (font-size, etc.) */
+.slick-prev::before,
+.slick-next::before {
+  font-size: 20px; /* Adjust the font size as needed */
+  color: black; /* Set the color to black or any color you prefer */
+}
+
+@media screen and (max-width: 640px) {
+  .slick-prev::before {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .slick-next::before {
+    font-size: 14px;
+    margin-left: -20px !important;
+  }
+}
+
+/* project css ends */

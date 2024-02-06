@@ -1,16 +1,15 @@
 import React from "react";
-import Header from "../components/TopHeader";
+
 import Cards from "../components/Cards";
 import News from "../components/News";
-import Footer from "../components/Footer";
+import TopHeader from "../components/TopHeader";
 
 const HomePage = () => {
   return (
     <div>
-      <Header />
+      <TopHeader />
       <Cards />
       <News />
-      <Footer />
     </div>
   );
 };
