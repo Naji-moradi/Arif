@@ -4,9 +4,49 @@
 *:focus {
   outline: none !important;
 }
-body {
-  overflow-x: hidden;
+
+.App1 {
+  text-align: center;
 }
+
+.App-header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content1 {
+  z-index: 1;
+}
+
+/* Additional styling for better appearance */
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+/* home end */
 
 nav {
   position: fixed;
@@ -22,6 +62,7 @@ nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1000;
 }
 .wrapper .logo a {
   color: white;
@@ -37,7 +78,7 @@ nav .wrapper {
   color: white;
 }
 .nav-links li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -82,6 +123,10 @@ nav .wrapper {
   cursor: pointer;
   display: none;
 }
+.logo1 {
+  width: 120px;
+  height: auto;
+}
 
 @media screen and (max-width: 970px) {
   .wrapper .btn {
@@ -110,29 +155,20 @@ nav input {
 
 .hero1 {
   width: 100%;
+  position: absolute;
+  right: 0;
+  top: 3px;
   background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
-  display: flex;
-  flex-direction: column;
 }
 
 @media screen and (max-width: 765px) {
-  .outerVideo {
-    position: absolute;
-    object-fit: fill;
-    height: 100vh;
-    display: block;
-  }
   .image-adv {
     width: 100%;
     height: auto;
   }
-
-  .hero1 {
-    height: 100vh;
-  }
 }
 .hero_text {
-  position: absolute !important;
+  position: absolute;
   top: 60%;
   left: 10%;
   color: white;
@@ -144,7 +180,7 @@ nav input {
 
 .centered-div {
   position: fixed;
-  top: 22%;
+  top: 30%;
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -165,10 +201,12 @@ nav input {
 }
 
 @media screen and (max-width: 970px) {
-  .hero_text h1 {
-    font-size: 24px;
-    top: 50%;
-    right: 50%;
+  .hero_text {
+    position: absolute;
+    font-size: 20px;
+    top: 40%;
+    left: 20%;
+    color: white;
   }
   .hero_icons {
     font-size: 24px;
@@ -190,6 +228,8 @@ nav input {
 }
 .footer-a {
   background-color: #e4e1e1;
+
+  bottom: 0;
 }
 .logo-a {
   width: 60px;
@@ -209,8 +249,6 @@ nav input {
   transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
   transform: translateY(-15px);
   border-radius: 40px;
-  /* margin: 40px; */
-  /* margin-top: 20px; */
 }
 
 /* project css start */
@@ -247,3 +285,11 @@ nav input {
 }
 
 /* project css ends */
+
+/* card  start*/
+.cardImage {
+  width: 40%;
+  height: auto;
+  padding-bottom: 7%;
+}
+/* card  end*/

@@ -1,8 +1,8 @@
 import React from "react";
-import image0 from "../assets/houseimg0.avif";
+import image0 from "../assets/house22.jpg";
 import image1 from "../assets/houseimg02.webp";
-import image2 from "../assets/houseimg2.webp";
-import image3 from "../assets/houseimg3.webp";
+import image11 from "../assets/house21.jpg";
+import image2 from "../assets/houseimage2.jpeg";
 import image4 from "../assets/houseimg4.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -45,12 +45,12 @@ const Projects = () => {
 
   return (
     <div className="container ">
-      <div className="px-3 my-5 pb-4">
+      <div className="px-3 my-5 pt-5 pb-4">
         <h4 className="">Work Collection</h4>
         <h1 className="fw-bold display-2">Project </h1>
       </div>
       <div className="text-center px-3 imageProject my-3  ">
-        <img className="rounded-4   " src={image1} alt="" />
+        <img className="rounded-4   " src={image11} alt="" />
       </div>
       <div className="slider-container">
         <Slider {...settings}>

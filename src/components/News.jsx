@@ -18,14 +18,14 @@ const News = () => {
 
   return (
     <div className="container">
-      <div className="d-flex flex-column justify-content-between gap-7 flex-md-row">
+      <div className="d-flex flex-column justify-content-between  gap-7 flex-lg-row py-5">
         <div className="text-start text-adv ">
           <h1 className="text-bold diplay-1">About Entop</h1>
-          <h2 className="text-muted pt-4 pb-2 ">
-            This is a sample text, This is a sample text, This is a sample text,
-            This is a sample text, This is a sample text, This is a sample text,
-            This is a sample text,
-          </h2>
+          <h3 className="text-muted pt-2 pb-2  ">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+            veniam impedit asperiores, officiis molestias ullam autem labore
+            atque recusandae aspernatur quaerat
+          </h3>
           <Button
             sx={{
               backgroundColor: "black",
@@ -40,7 +40,7 @@ const News = () => {
         </div>
         <div>
           <div>
-            <img className="rounded-3 image-adv" src={currentImage} alt="" />
+            <img className="rounded-3   image-adv" src={currentImage} alt="" />
           </div>
         </div>
       </div>

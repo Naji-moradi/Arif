@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import video from "../assets/video.mp4";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import CloseIcon from "@mui/icons-material/Close";
-
+import logo from "../assets/logo1.webp";
 const TopHeader = () => {
   const [isDivOpen, setIsDivOpen] = useState(false);
   const toggleDiv = () => {
@@ -13,14 +10,10 @@ const TopHeader = () => {
   };
   return (
     <div className="hero1 ">
-      <video autoPlay loop muted playsInline className="outerVideo ">
-        <source className="back-video  " src={video} type="video/mp4" />
-      </video>
-
       <nav>
         <div className="wrapper">
           <div className="logo">
-            <a href="#">Logo</a>
+            <img className="logo1" src={logo} alt="" />
           </div>
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
@@ -86,48 +79,6 @@ const TopHeader = () => {
           </ul>
         </div>
       )}
-
-      <div className="hero_text display-1 fw-bold h1 ">
-        <h1 className="fw-bold text-white">Entop Construction </h1>
-        <h1 className="text-center fw-bold text-white">Pty Ltd</h1>
-        <div className="d-flex flex-row gap-3 text-center icons">
-          <MailOutlineIcon
-            sx={{
-              p: "5px",
-              color: "black",
-              backgroundColor: "white",
-              borderRadius: "7px",
-              fontSize: "50px",
-              fontSize: {
-                xs: "2rem", // Extra small screens (0-600px)
-                sm: "2.5rem", // Small screens (600-960px)
-                md: "3rem", // Medium screens (960-1280px)
-                lg: "3.5rem", // Large screens (1280-1920px)
-                xl: "4rem", // Extra large screens (1920px and above)
-              },
-            }}
-            className="hero_icons"
-          />
-
-          <AddIcCallIcon
-            sx={{
-              p: "5px",
-              color: "black",
-              backgroundColor: "white",
-              borderRadius: "7px",
-              fontSize: "50px",
-              fontSize: {
-                xs: "2rem", // Extra small screens (0-600px)
-                sm: "2.5rem", // Small screens (600-960px)
-                md: "3rem", // Medium screens (960-1280px)
-                lg: "3.5rem", // Large screens (1280-1920px)
-                xl: "4rem", // Extra large screens (1920px and above)
-              },
-            }}
-            className="hero_icons"
-          />
-        </div>
-      </div>
     </div>
   );
 };
