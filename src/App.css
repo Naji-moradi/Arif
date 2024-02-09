@@ -413,7 +413,7 @@ nav input {
   .textforItem {
     justify-content: center; /* Horizontal centering */
     align-items: center;
-    padding-top: 35px;
+    padding-top: 28px;
     padding-right: 100px;
     word-wrap: unset;
     white-space: nowrap;

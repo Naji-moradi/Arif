@@ -50,7 +50,7 @@ const Cards = () => {
                 <img src={imag3} alt="image1" className="cardImage" />
               </div>
               <span className="textforItem">
-                <h3 className="text-bold text-muted    ">Upgare/Downsize</h3>
+                <h3 className="text-bold text-muted    ">Upgare & Downsize</h3>
               </span>
             </div>
           </div>{" "}
