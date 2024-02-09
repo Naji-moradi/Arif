@@ -13,26 +13,28 @@ const TopHeader = () => {
       <nav>
         <div className="wrapper">
           <div className="logo">
-            <img className="logo1" src={logo} alt="" />
+            <Link to="/">
+              <img className="logo1" src={logo} alt="" />
+            </Link>
           </div>
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
           <ul className="nav-links">
             <label for="close-btn" className="btn close-btn"></label>
             <li>
-              <Link to="/entop">
+              <Link className="LinkNav" to="/entop">
                 <a href="#">WhyEntop?</a>
               </Link>
             </li>
             <li>
-              <Link to="/projects">
+              <Link className="LinkNav" to="/projects">
                 <a href="#">Projects</a>
               </Link>
             </li>
 
             <li>
               <li>
-                <Link to="/services">
+                <Link className="LinkNav" to="/services">
                   <a href="#">Services</a>
                 </Link>
               </li>
@@ -59,10 +61,14 @@ const TopHeader = () => {
               </ul>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link className="LinkNav" to="/">
+                <a href="#">About</a>
+              </Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link className="LinkNav" to="/">
+                <a href="#">Contact</a>
+              </Link>
             </li>
           </ul>
 

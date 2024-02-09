@@ -18,14 +18,17 @@ const News = () => {
 
   return (
     <div className="container">
-      <div className="d-flex flex-column justify-content-between  gap-7 flex-lg-row py-5">
-        <div className="text-start text-adv ">
+      <div className="d-flex flex-column flex-lg-row justify-content-between  gap-7 flex-lg-row py-5">
+        <div className="text-start text-adv order-2 order-lg-1 ">
           <h1 className="text-bold diplay-1">About Entop</h1>
-          <h3 className="text-muted pt-2 pb-2  ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-            veniam impedit asperiores, officiis molestias ullam autem labore
-            atque recusandae aspernatur quaerat
-          </h3>
+          <p className="text-muted fs-5  pt-2 pb-2  ">
+            Welcome to Entop Construct! We turn your dreams into reality with
+            confidence. Our strength lies in prioritizing and exceeding client
+            expectations. Let us build your project with the best expertise. At
+            Entop Construct, we provide a unique and professional experience,
+            empowering you to control your dream home. Build with confidence –
+            it's our commitment to you
+          </p>
           <Button
             sx={{
               backgroundColor: "black",
@@ -38,7 +41,7 @@ const News = () => {
             Read more
           </Button>
         </div>
-        <div>
+        <div className=" order-1 order-lg-2 ">
           <div>
             <img className="rounded-3   image-adv" src={currentImage} alt="" />
           </div>

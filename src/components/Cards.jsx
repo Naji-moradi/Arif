@@ -18,7 +18,7 @@ const Cards = () => {
                 <img src={imag1} alt="image1" className="cardImage" />
               </div>
               <span className="textforItem">
-                <h3 className="text-bold   py-1">Custom housing</h3>
+                <h3 className="text-bold text-muted   py-1">Custom housing</h3>
               </span>
             </div>
           </div>{" "}
@@ -29,10 +29,14 @@ const Cards = () => {
              "
             >
               <div className="text-center iconForMobile">
-                <img src={imag2} alt="image1" className="cardImage" />
+                <img
+                  src={imag2}
+                  alt="image1"
+                  className="text-muted cardImage"
+                />
               </div>
               <span className="textforItem ">
-                <h3 className="text-bold  ">Custom housing</h3>
+                <h3 className="text-bold text-muted   ">Design & construct</h3>
               </span>
             </div>
           </div>{" "}
@@ -46,7 +50,7 @@ const Cards = () => {
                 <img src={imag3} alt="image1" className="cardImage" />
               </div>
               <span className="textforItem">
-                <h3 className="text-bold   ">Custom housing</h3>
+                <h3 className="text-bold text-muted    ">Upgare/Downsize</h3>
               </span>
             </div>
           </div>{" "}

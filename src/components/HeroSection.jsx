@@ -13,10 +13,15 @@ const HeroSection = () => {
         </video>
         <div className="content1">
           <div className="hero_text display-1 fw-bold h1 ">
-            <h1 className="fw-bold text-white">Entop Construction </h1>
+            <h1 className="fw-bold text-white">
+              <span className="break-line">Entop</span>
+              <span className="break-line">Construction</span>
+            </h1>
 
-            <h1 className="text-center fw-bold text-white">Pty Ltd</h1>
-            <div className="d-flex flex-row gap-3 text-center icons">
+            <h1 className="text-start text-md-center fw-bold text-white">
+              Pty Ltd
+            </h1>
+            <div className="d-flex flex-row gap-3 text-start text-md-center icons">
               <MailOutlineIcon
                 sx={{
                   p: "5px",

@@ -55,14 +55,16 @@ nav {
 }
 nav .wrapper {
   max-width: 100%;
-  padding: 0px 30px;
-  height: 70px;
-  line-height: 70px;
+  padding: 0px 35px;
+  height: 55px;
+  line-height: 80px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .wrapper .logo a {
   color: white;
@@ -72,23 +74,44 @@ nav .wrapper {
 }
 .wrapper .nav-links {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
 }
+/* .wrapper {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  z-index: 10000;
+} */
 .nav-links li {
   list-style: none;
   color: white;
 }
 .nav-links li a {
   margin: 3px;
-  padding: 5px;
-  color: #497bb4;
-  text-shadow: #111010;
+  padding: 6px;
+  /* color: #497bb4; */
+  /* text-shadow: #111010; */
+  color: rgb(105, 132, 255);
 
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  padding: 9px 15px;
-  border-radius: 5px;
+
+  border-radius: 2px;
   transition: all 0.3s ease;
+}
+.LinkNav a {
+  /* position: relative;
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.09);
+  margin-top: 10px;
+  z-index: 10000; */
 }
 .nav-links li a:hover {
   color: #0088ff;
@@ -163,7 +186,7 @@ nav input {
   width: 100%;
   position: absolute;
   right: 0;
-  top: 3px;
+  top: 0px;
   background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
 }
 
@@ -209,14 +232,31 @@ nav input {
 }
 @media screen and (max-width: 970px) {
   .hero_text {
-    position: absolute;
     font-size: 20px;
-    top: 60%;
-    left: 8%;
+    top: 50%;
+    left: 2%;
     color: white;
-  }
-  .hero_text {
     text-align: left;
+    align-self: flex-start;
+  }
+  .hero_text h1 {
+    word-wrap: break-word;
+    text-align: left;
+    justify-content: start;
+  }
+  .icons {
+    justify-content: start;
+  }
+  @media (max-width: 992px) {
+    .break-line::before {
+      content: "\A";
+      white-space: pre;
+    }
+    .text-adv {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
   }
 
   .forSmall {
@@ -225,6 +265,7 @@ nav input {
   .hero_icons {
     font-size: 24px;
     text-align: left;
+    justify-content: start;
   }
 }
 .box-color {
@@ -235,7 +276,8 @@ nav input {
 }
 
 .image-adv {
-  padding: 2%;
+  padding: 0%;
+  height: 100%;
   border-radius: 5px !important;
 }
 .text-adv {
@@ -245,6 +287,12 @@ nav input {
   background-color: #e4e1e1;
 
   bottom: 0;
+}
+.footerLinks {
+  color: rgb(119, 119, 119);
+}
+.footerLinks:hover {
+  color: rgb(83, 82, 82);
 }
 .logo-a {
   width: 60px;
@@ -306,6 +354,7 @@ nav input {
   width: 40%;
   height: auto;
   padding-bottom: 7%;
+  color: #6c757d;
 }
 /* card  end*/
 /* shwy entop start */
@@ -372,6 +421,10 @@ nav input {
   .iconForMobile img {
     width: 50%;
     margin: 0;
+    color: #6c757d;
   }
+}
+.iconForMobile img {
+  opacity: 0.6;
 }
 /* Navbar drop down ends */

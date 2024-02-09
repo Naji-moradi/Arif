@@ -4,6 +4,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import { Link } from "react-router-dom";
+import { colors } from "@mui/material";
 
 const Footer = () => {
   return (
@@ -53,7 +55,7 @@ const Footer = () => {
           </div>
           <div className="col-md-6 col-12">
             <div className="d-flex justify-content-between justify-content-md-around">
-              <div>
+              <div className="">
                 <p
                   class="h5 mb-4 fw-bold text-muted"
                   style={{ fontWeight: "400" }}
@@ -64,11 +66,77 @@ const Footer = () => {
                   class="p-0"
                   style={{ listStyle: "none", cursor: "pointer" }}
                 >
-                  <li class="my-2 foter-item text-muted">Home</li>
-                  <li class="my-2 foter-item text-muted">Projects</li>
-                  <li class="my-2 foter-item text-muted">Services</li>
-                  <li class="my-2 foter-item text-muted">About</li>
-                  <li class="my-2 foter-item text-muted">Contact</li>
+                  <li class="my-2 foter-item text-muted">
+                    <Link
+                      className="footerLinks"
+                      style={{ textDecoration: "none" }}
+                      to="/entop"
+                    >
+                      Why Entop ?
+                    </Link>
+                  </li>
+                  <li class="my-2 foter-item text-muted">
+                    <Link
+                      className="footerLinks"
+                      style={{ textDecoration: "none" }}
+                      to="/"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li class="my-2 foter-item text-muted">
+                    <Link
+                      className="footerLinks"
+                      style={{ textDecoration: "none" }}
+                      to="/projects"
+                    >
+                      Projects
+                    </Link>
+                  </li>
+
+                  <li class="my-2 foter-item text-muted">
+                    <Link
+                      className="footerLinks"
+                      style={{ textDecoration: "none" }}
+                      to="/services"
+                    >
+                      Services
+                    </Link>
+                  </li>
+                  <li class="my-2 foter-item text-muted">
+                    <Link
+                      className="footerLinks"
+                      style={{ textDecoration: "none" }}
+                      to="/"
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li class="my-2 foter-item text-muted">
+                    <Link
+                      className="footerLinks"
+                      style={{ textDecoration: "none" }}
+                      to="/"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+
+                  {/* <Link to="/">
+                    <li class="my-2 foter-item text-muted">Home</li>
+                  </Link>
+                  <Link to="/">
+                    <li class="my-2 foter-item text-muted">Projects</li>
+                  </Link>
+                  <Link to="/projects">
+                    <li class="my-2 foter-item text-muted">Services</li>
+                  </Link>
+                  <Link to="/about">
+                    <li class="my-2 foter-item text-muted">About</li>
+                  </Link>
+                  <Link to="/">
+                    <li class="my-2 foter-item text-muted">Contact</li>
+                  </Link> */}
                 </ul>
               </div>
               <div>
