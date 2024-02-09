@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import WhyEntop from "./components/WhyEntop";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/entop" element={<WhyEntop />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </Router>

@@ -10,42 +10,42 @@ const Cards = () => {
         <div className="row ">
           <div className="col-12 col-md-4 ">
             <div
-              className="box-color d-flex flex-column text-center p-5 border border-2 
-            my-3 py-5 bg-light hoverCard
-            m-2 "
+              className="box-color d-flex flex-row flex-md-column text-center p-2 py-md-5 border border-2 
+            my-3   py-5 bg-light hoverCard
+             "
             >
-              <div className="text-center">
+              <div className="text-center iconForMobile">
                 <img src={imag1} alt="image1" className="cardImage" />
               </div>
-              <span>
+              <span className="textforItem">
                 <h3 className="text-bold   py-1">Custom housing</h3>
               </span>
             </div>
           </div>{" "}
           <div className="col-12 col-md-4 ">
             <div
-              className="box-color d-flex flex-column text-center p-5 border border-2 
+              className="box-color d-flex flex-row flex-md-column text-center p-2 py-md-5 border border-2 
             my-3   py-5 bg-light hoverCard
-            m-2 "
+             "
             >
-              <div className="text-center">
+              <div className="text-center iconForMobile">
                 <img src={imag2} alt="image1" className="cardImage" />
               </div>
-              <span>
+              <span className="textforItem ">
                 <h3 className="text-bold  ">Custom housing</h3>
               </span>
             </div>
           </div>{" "}
           <div className="col-12 col-md-4 ">
             <div
-              className="box-color d-flex flex-column text-center p-5 border border-2 
+              className="box-color d-flex flex-row flex-md-column text-center p-2 py-md-5 border border-2 
             my-3   py-5 bg-light hoverCard
-            m-2 "
+             "
             >
-              <div className="text-center">
+              <div className="text-center iconForMobile ">
                 <img src={imag3} alt="image1" className="cardImage" />
               </div>
-              <span>
+              <span className="textforItem">
                 <h3 className="text-bold   ">Custom housing</h3>
               </span>
             </div>

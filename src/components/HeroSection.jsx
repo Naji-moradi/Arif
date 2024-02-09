@@ -14,6 +14,7 @@ const HeroSection = () => {
         <div className="content1">
           <div className="hero_text display-1 fw-bold h1 ">
             <h1 className="fw-bold text-white">Entop Construction </h1>
+
             <h1 className="text-center fw-bold text-white">Pty Ltd</h1>
             <div className="d-flex flex-row gap-3 text-center icons">
               <MailOutlineIcon

@@ -78,7 +78,11 @@ nav .wrapper {
   color: white;
 }
 .nav-links li a {
-  color: rgb(0, 0, 0);
+  margin: 3px;
+  padding: 5px;
+  color: #497bb4;
+  text-shadow: #111010;
+
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -115,6 +119,8 @@ nav .wrapper {
   top: 70px;
   opacity: 1;
   visibility: visible;
+}
+.wrapper {
 }
 
 .wrapper .btn {
@@ -199,17 +205,26 @@ nav input {
   margin: 5px;
   padding-left: 4px;
 }
-
+.forSmall {
+}
 @media screen and (max-width: 970px) {
   .hero_text {
     position: absolute;
     font-size: 20px;
-    top: 40%;
-    left: 20%;
+    top: 60%;
+    left: 8%;
     color: white;
+  }
+  .hero_text {
+    text-align: left;
+  }
+
+  .forSmall {
+    display: block;
   }
   .hero_icons {
     font-size: 24px;
+    text-align: left;
   }
 }
 .box-color {
@@ -312,3 +327,51 @@ nav input {
   }
 }
 /* shwy entop end */
+/* about css started */
+.aboutImages img {
+  border-radius: 20px;
+  width: 87%;
+  height: auto;
+}
+.aboutNews {
+  padding-top: 100px;
+}
+@media screen and (max-width: 992px) {
+  .aboutImages img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* about css ends */
+
+/* Navbar drop down start */
+.dropdoenforMobile {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  width: 230px;
+  padding-left: 40px;
+  padding-top: 5px;
+  margin-top: 50px;
+}
+.dropdown {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.dropdoenforMobile li {
+  list-style: none;
+  padding-left: 0px;
+}
+@media screen and (max-width: 768px) {
+  .textforItem {
+    justify-content: center; /* Horizontal centering */
+    align-items: center;
+    padding-top: 35px;
+    padding-right: 100px;
+    word-wrap: unset;
+    white-space: nowrap;
+  }
+  .iconForMobile img {
+    width: 50%;
+    margin: 0;
+  }
+}
+/* Navbar drop down ends */

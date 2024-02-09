@@ -31,14 +31,16 @@ const TopHeader = () => {
             </li>
 
             <li>
-              <a href="#" className="desktop-item">
-                Dropdown Menu
-              </a>
+              <li>
+                <Link to="/services">
+                  <a href="#">Services</a>
+                </Link>
+              </li>
               <input type="checkbox" id="showDrop" />
               <label for="showDrop" className="mobile-item">
                 Dropdown Menu
               </label>
-              <ul className="drop-menu">
+              <ul className="drop-menu dropdown">
                 <li>
                   <a href="#">Custom home</a>
                 </li>
@@ -73,9 +75,9 @@ const TopHeader = () => {
       </nav>
 
       {isDivOpen && (
-        <div className="centered-div py-3">
+        <div className="centered-div py-5  dropdoenforMobile">
           <h5>Menue</h5>
-          <ul className="px-3 fw-semibold ">
+          <ul className="px-0 fw-semibold  ">
             <li>Home</li>
             <li>Project</li>
             <li>Services</li>
