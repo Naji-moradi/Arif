@@ -293,3 +293,22 @@ nav input {
   padding-bottom: 7%;
 }
 /* card  end*/
+/* shwy entop start */
+.responsive-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: 100%; */
+  max-width: 90%;
+  height: auto;
+  height: auto;
+  /* opacity: 1; Adjust opacity value as needed */
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .responsive-image {
+    max-width: 80%; /* Adjust the percentage based on your preference */
+  }
+}
+/* shwy entop end */

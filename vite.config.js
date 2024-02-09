@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import VitePluginCss from "vite-plugin-css";
 
-// https://vitejs.dev/config/
+import vitePluginString from "vite-plugin-string";
+
 export default defineConfig({
-  plugins: [react(), VitePluginCss()],
+  plugins: [react(), vitePluginString()],
 });

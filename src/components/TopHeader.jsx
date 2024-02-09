@@ -20,6 +20,11 @@ const TopHeader = () => {
           <ul className="nav-links">
             <label for="close-btn" className="btn close-btn"></label>
             <li>
+              <Link to="/entop">
+                <a href="#">WhyEntop?</a>
+              </Link>
+            </li>
+            <li>
               <Link to="/projects">
                 <a href="#">Projects</a>
               </Link>
